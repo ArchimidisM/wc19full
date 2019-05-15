@@ -16,4 +16,25 @@
     ?>
 </head>
 
-<body <?php body_class();?>>
+<body <?php body_class(); ?>>
+
+<!-- Δημιουργούμε το navigation menu wrapper
+το οποίο περιέχει logo + navigation
+Κώδικας 1Δ,
+ Κώδικας 1Ε
+ -->
+
+<div class="header-wrapper">
+    <div class="container container-fluid">
+        <div class="row middle-xs">
+            <div class="col-sm-4 col-xs-12">
+                <?php
+                    get_template_part('tpl/logo-tpl');
+                ?>
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <?php get_template_part('tpl/navigation-tpl'); ?>
+            </div>
+        </div>
+    </div>
+</div>
