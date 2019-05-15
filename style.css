@@ -7,6 +7,16 @@ Description: Test theme for the WordCamp 2019 Workshop
 Version: 1.0
 License: GNU General Public License v3
 License URI: LICENSE
-Text Domain: nothing-personal
+Text Domain: wc
 Tags:two-columns,right-sidebar,translation-ready
 */
+/*
+ * CSS
+ * Workshop Helper
+ * Κώδικας 1
+ */
+body{
+    font-size: 16px;
+    color: #444;
+    line-height: 26px;
+}
