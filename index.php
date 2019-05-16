@@ -86,7 +86,7 @@
                 <?php endif; ?>
             </div>
             <div class="col-sm-4 col-xs-12">
-                <p>Sidebar Maybe</p>
+               <?php get_sidebar();?>
             </div>
         </div>
     </div>

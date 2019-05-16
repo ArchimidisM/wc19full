@@ -24,10 +24,10 @@ get_header();
                             </article>
                         <?php endwhile;
                     endif; ?>
-
+                    <?php comments_template();?>
                 </div>
                 <div class=" col-sm-4 col-xs-12">
-                    <p>Sidebar</p>
+                    <?php get_sidebar();?>
                 </div>
             </div>
         </div>

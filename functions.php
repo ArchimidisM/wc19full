@@ -103,3 +103,21 @@ if (!function_exists('wc_excerpt_end')):
     }
 add_filter('excerpt_more','wc_excerpt_end');
 endif;
+
+/**
+ * Δήλωση sidebar
+ * WorkShop Helper
+ * Κώδικας 3Β
+ */
+add_action( 'widgets_init', 'wc_widgets_init' );
+function wc_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'Main Sidebar', 'theme-slug' ),
+        'id' => 'sidebar',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'wc' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
